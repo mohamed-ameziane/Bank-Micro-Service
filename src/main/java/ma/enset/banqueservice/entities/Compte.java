@@ -14,7 +14,7 @@ import java.util.Date;
 @AllArgsConstructor @NoArgsConstructor
 public class Compte {
     @Id
-    private String id;
+    private Integer id;
     private Date dateCreation;
     private Double solde;
     private String currency;

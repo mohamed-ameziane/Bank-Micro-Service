@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import java.util.Date;
-import java.util.UUID;
 
 @SpringBootApplication
 public class BanqueServiceApplication {
@@ -17,12 +16,13 @@ public class BanqueServiceApplication {
         SpringApplication.run(BanqueServiceApplication.class, args);
     }
 
+    /*
     @Bean
     CommandLineRunner start(CompteRepository compteRepository) {
         return args -> {
             // 1. Créer des données (GIVEN)
             Compte c1 = Compte.builder()
-                    .id(UUID.randomUUID().toString())
+                    .id(1)
                     .dateCreation(new Date())
                     .solde(8000.0)
                     .currency("MAD")
@@ -30,7 +30,7 @@ public class BanqueServiceApplication {
                     .build();
 
             Compte c2 = Compte.builder()
-                    .id(UUID.randomUUID().toString())
+                    .id(1)
                     .dateCreation(new Date())
                     .solde(1200.0)
                     .currency("MAD")
@@ -49,5 +49,5 @@ public class BanqueServiceApplication {
             });
             System.out.println("---------------------------------");
         };
-    }
+    }*/
 }
