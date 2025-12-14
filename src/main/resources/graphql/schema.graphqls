@@ -1,0 +1,29 @@
+type Query {
+    # Récupérer tous les comptes
+    accountList : [Compte]
+    # Récupérer un compte par son ID
+    accountById (id : String) : Compte
+}
+
+type Mutation {
+    # Ajouter un compte
+    addAccount(compte : CompteRequest) : Compte
+    # Modifier un compte
+    updateAccount(id : String, compte : CompteRequest) : Compte
+    # Supprimer un compte
+    deleteAccount(id : String) : String
+}
+
+type Compte {
+    id : String
+    dateCreation : String
+    solde : Float
+    currency : String
+    type : String
+}
+
+input CompteRequest {
+    solde : Float
+    currency : String
+    type : String
+}

@@ -16,7 +16,7 @@ public class BanqueServiceApplication {
         SpringApplication.run(BanqueServiceApplication.class, args);
     }
 
-    /*
+
     @Bean
     CommandLineRunner start(CompteRepository compteRepository) {
         return args -> {
@@ -49,5 +49,5 @@ public class BanqueServiceApplication {
             });
             System.out.println("---------------------------------");
         };
-    }*/
+    }
 }
